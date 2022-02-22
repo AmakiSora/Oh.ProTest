@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 
 @app.route('/helloworld')
-def hello_world():  # put application's code here
+def hello_world():
     return 'HelloWorld'
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=8000)
